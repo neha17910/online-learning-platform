@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learnify — Online Learning Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Learnify</a>
+
+      <!-- centered search like screenshot -->
+      <div class="header-search" role="search">
+        <input id="top-search" type="search" placeholder="Search courses, topics..." aria-label="Search courses" />
+        <button aria-label="Search">🔍</button>
+      </div>
+
+      <div class="header-actions">
+        <button class="btn-outline login">Login</button>
+        <button class="btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-shape"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 id="hero-title">Unlock Your Potential with Online Learning</h1>
+          <p>Join thousands of learners and access top-rated courses from expert instructors. Learn anytime, anywhere.</p>
+
+          <!-- pill search over hero similar to screenshot -->
+          <form class="hero-search" role="search" aria-label="Find courses">
+            <label class="visually-hidden" for="q">Search courses</label>
+            <input id="q" name="q" type="search" placeholder="What do you want to learn?" />
+            <button class="btn-primary" type="submit">Find Courses</button>
+          </form>
+        </div>
+
+        <div class="hero-image" aria-hidden="true">
+          <img src="https://picsum.photos/seed/learnify/900/600" alt="Online learning banner" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section id="categories" class="section container">
+      <h2 class="section-title">Popular Categories</h2>
+      <div class="categories-grid">
+        <div class="cat">
+          <img src="https://picsum.photos/seed/dev/60/60" alt="Development"/>
+          <span>Development</span>
+        </div>
+        <div class="cat">
+          <img src="https://picsum.photos/seed/design/60/60" alt="Design"/>
+          <span>Design</span>
+        </div>
+        <div class="cat">
+          <img src="https://picsum.photos/seed/business/60/60" alt="Business"/>
+          <span>Business</span>
+        </div>
+        <div class="cat">
+          <img src="https://picsum.photos/seed/lang/60/60" alt="Languages"/>
+          <span>Languages</span>
+        </div>
+        <div class="cat">
+          <img src="https://picsum.photos/seed/academics/60/60" alt="Academics"/>
+          <span>Academics</span>
+        </div>
+        <div class="cat">
+          <img src="https://picsum.photos/seed/music/60/60" alt="Music"/>
+          <span>Music</span>
+        </div>
+        <div class="cat">
+          <img src="https://picsum.photos/seed/life/60/60" alt="Lifestyle"/>
+          <span>Lifestyle</span>
+        </div>
+        <div class="cat">
+          <img src="https://picsum.photos/seed/science/60/60" alt="Science"/>
+          <span>Science</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED COURSES -->
+    <section id="courses" class="section container">
+      <div class="section-head">
+        <h2 class="section-title">Featured Courses</h2>
+        <div class="filters">
+          <label>Level:
+            <select aria-label="Filter level">
+              <option>All</option>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="cards-grid" role="list">
+        <article class="card" role="listitem">
+          <img src="https://picsum.photos/seed/course1/600/360" alt="Modern Web Development" />
+          <div class="card-body">
+            <h3>Modern Web Development Bootcamp</h3>
+            <p class="meta">By A. Khan • 28 hours</p>
+            <p class="desc">Learn HTML, CSS & JavaScript to build responsive websites and apps.</p>
+            <div class="card-footer">
+              <span class="price">₹799</span>
+              <a class="btn-outline" href="#enroll">Enroll</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" role="listitem">
+          <img src="https://picsum.photos/seed/course2/600/360" alt="Graphic Design" />
+          <div class="card-body">
+            <h3>Graphic Design Masterclass</h3>
+            <p class="meta">By S. Patel • 16 hours</p>
+            <p class="desc">Design beautiful visuals using Figma and Adobe tools.</p>
+            <div class="card-footer">
+              <span class="price">₹599</span>
+              <a class="btn-outline" href="#enroll">Enroll</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" role="listitem">
+          <img src="https://picsum.photos/seed/course3/600/360" alt="Business Analytics" />
+          <div class="card-body">
+            <h3>Business Analytics Fundamentals</h3>
+            <p class="meta">By R. Sharma • 20 hours</p>
+            <p class="desc">Use Excel & SQL to make data-driven decisions.</p>
+            <div class="card-footer">
+              <span class="price">₹999</span>
+              <a class="btn-outline" href="#enroll">Enroll</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section container testimonials">
+      <h2 class="section-title">What Our Students Say</h2>
+      <div class="test-grid">
+        <figure class="test-card">
+          <img src="https://picsum.photos/seed/u1/80/80" alt="student 1" />
+          <blockquote>"Great courses and friendly instructors."</blockquote>
+          <figcaption>— Priya S.</figcaption>
+        </figure>
+
+        <figure class="test-card">
+          <img src="https://picsum.photos/seed/u2/80/80" alt="student 2" />
+          <blockquote>"Learned skills that helped me get a job."</blockquote>
+          <figcaption>— Aman K.</figcaption>
+        </figure>
+
+        <figure class="test-card">
+          <img src="https://picsum.photos/seed/u3/80/80" alt="student 3" />
+          <blockquote>"Platform is easy to use and content is excellent."</blockquote>
+          <figcaption>— Neha M.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACT / SIGNUP FORM -->
+    <section id="contact" class="section container">
+      <h2 class="section-title">Get in Touch / Sign Up</h2>
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name" />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" />
+        </div>
+
+        <div class="form-row full">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Questions or comments"></textarea>
+        </div>
+
+        <div class="form-row full">
+          <button class="btn-primary" type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#">Learnify</a>
+        <p>© <span id="year"></span> Learnify. All rights reserved.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('form').forEach(f => {
+      f.addEventListener('submit', e => {
+        e.preventDefault();
+        alert('Form submitted (demo).');
+      });
+    });
+  </script>
+</body>
+</html>
